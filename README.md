@@ -1,6 +1,6 @@
 # PhD_document_for_navlab
 
-The project contains the relative documents for the softwares which I developped or used during my PhD period.
+The project contains the relative software documents which I developped or used during my PhD period.
 
 It includes:
 
