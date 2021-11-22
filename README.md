@@ -4,7 +4,7 @@ The project contains the relative software documents which I developped or used 
 
 It includes:
 
-* FLVIS. A stereo-inertial pose estimation system.
+* [FLVIS](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/FLVIS.md). A stereo-inertial pose estimation system.
 * RW_SLAM. A tightly-coupled system fusing RGB-D camera and wheel odometer.
 * ESKF. An ESKF algorithm to fuse IMU and GNSS data.
 * 3D reconstruction demo based on pcl and Open3D.
