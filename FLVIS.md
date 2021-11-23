@@ -5,13 +5,14 @@ FLVIS is a stereo-inertial pose estimation system. It supports four modes:
 * 2. RGB-D camera;
 * 3. IMU + stereo camera; 
 * 4. IMU + RGB-D camera. 
+
 For RGB-D cameras, the latest version only supports depth image encoded by unsigned int. For example, if you are using a intel realsense camera or a Kinect-v2, you can directly use it. If you are using Kinect DK or other openni-related sensor, please transfer your images from float to unsigned int first.
 
 ### 1. Build and run
 
 The content about building and running FLVIS can be referred to [FLVIS](https://github.com/HKPolyU-UAV/FLVIS).
 
-### 2. Details and comments 
+### 2. Details of FLVIS 
 
 The design of FLVIS packages is shown below.
 
@@ -53,4 +54,9 @@ The design of FLVIS packages is shown below.
     * kitti_publisher.cpp. The node to publish image messages from KITTI.
 * voc. The ORB vocabulary for DBoW3.
 * CMakeLists. The CMake File for the FLVIS package.
+
+### 3. An example launch file
+
+Use flvis_d435i_depth.launch as an example to explain the usage of FLVIS.
+
 
