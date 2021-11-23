@@ -59,4 +59,14 @@ The design of FLVIS packages is shown below.
 
 Use flvis_d435i_depth.launch as an example to explain the usage of FLVIS.
 
+* <include file="$(find flvis)/launch/d435i/d435i_depth.launch"/> include the launch file for D435i driver.
+* /yamlconfigfile is the config file for FLVIS. Please modify line 8-19 according to your sensor.
+* /voc is the vocabulary file.
+* TrackingNodeletClass_loader is to open the tracking node.
+  * /vo/input_image_0. Please remap to your IR or RGB image topic.
+  * /vo/input_image_1. Please remap to your depth image topic.
+  * /imu. Please remap to your IMU image topic.
+* LocalMapNodeletClass_loader is to open the local mapping node.
+* LoopClosingNodeletClass_loader is to open the loop closing node.
+
 
