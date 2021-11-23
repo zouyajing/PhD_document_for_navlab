@@ -37,7 +37,7 @@ The design of FLVIS packages is shown below.
   * d435i. It contains the launch file and config file for openning D435i camera.
   * EuRoc_MAV. The config for euroc mav dataset.
   * KITTI. The config for KITTI dataset.
-  * ss_ipad. It will be introduced in other projects.
+  * ss_ipad. It will be introduced in other project. [Reconstruction_demo](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/Reconstruction_demo.md)
 * msg. It contains two slef-defined messages:
   * CorrectionInf.msg. It is published by the local mapping node, which informs the update KF and map points.
   * KeyFrame.msg. It is published by the tracking node, which contains the images, 2D and 3D points on a keyframe.
