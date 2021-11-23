@@ -39,13 +39,13 @@ The design of FLVIS packages is shown below.
 * rviz. The config file for Rviz.
 * src. The implementation of FLVIS is here.
   * backend.
-    * vo_localmap.cpp.
-    * vo_loopclosing.cpp
+    * vo_localmap.cpp. The interface for local mapping node.
+    * vo_loopclosing.cpp. The interface for loop closing node.
   * frontend.
-    * vo_tracking.cpp
+    * vo_tracking.cpp. The interface for tracking node.
   * independ_moduls.
-    * vo_repub_rec.cpp
-    * kitti_publisher.cpp
+    * vo_repub_rec.cpp. The node to publish and save the camera poses.
+    * kitti_publisher.cpp. The node to publish image messages from KITTI.
 * voc. The ORB vocabulary for DBoW3.
 * CMakeLists. The CMake File for the FLVIS package.
 
