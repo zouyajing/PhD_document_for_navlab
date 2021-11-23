@@ -8,4 +8,4 @@ The content about building and running FLVIS can be referred to [FLVIS](https://
 
 ### 2. Details and comments 
 
-The design of FLVIS packages is shown [](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/FLVIS_code.png)
+The design of FLVIS packages is shown ![FLVIS](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/FLVIS_code.png)
