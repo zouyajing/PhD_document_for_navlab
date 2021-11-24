@@ -89,7 +89,7 @@ The design of RW_SLAM packages is shown below.
     * tracking. The interface for the tracking thread.
     * vocabulary. Transfer the descriptors to a word vector.
   * voc. It stores the ORB vocabulary.
-  * CMakeLists. The CMake file for RW_SLAM.
+  * CMakeLists. The CMake File for RW_SLAM package.
     
 
 
