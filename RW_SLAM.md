@@ -52,7 +52,13 @@ The design of RW_SLAM packages is shown below.
   * line 39 is the feature number. In general, the increase of the feature number indicates better tracking performance, while the decrease means faster tracking speed.
   * line 74 is the vocabulary file. ![#Must be modified.](https://via.placeholder.com/15/f03c15/000000?text=+) `#Must be modified.`
   * line 75 is the result folder. Must be modified.![#Must be modified.](https://via.placeholder.com/15/f03c15/000000?text=+) `#Must be modified.`
-
+* launch. It contains the launch files for running RW_SLAM:
+  * turtlebot2_demo. It contains the launch files for running RW_SLAM on a Turtlebot2. + Kinect DK or Kinect v2.
+  * rviz.launch. The launch file of Rviz.
+  * rw_slam_test.launch. The launch file for running RW_SLAM with a rosbag.
+  * * line 3 in rw_slam_test.launch based on your bag file;
+  * * line 8 based on your config file;
+  * * line 9-11 based on the image and odom topics.
 
 
 
