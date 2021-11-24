@@ -40,7 +40,6 @@ roslaunch rw_slam scan_DK.launch           (convert depth image to 2D laserscan)
 roslaunch rw_slam rw_slam_front_DK.launch  (run RW_SLAM)
 ```
 
-### 3. Run the examples
 
 
 
