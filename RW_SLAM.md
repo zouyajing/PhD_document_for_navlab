@@ -50,7 +50,7 @@ The design of RW_SLAM packages is shown below.
   * line 2- 7 is the parameters of your RGB-D camera, which includes resolution, instrinsic calibration matrix, distortion parameters, depth scale and frequency.
   * line 28-32 is the 4x4 extrinsic calibration matrix between RGB-D camera and wheel odometer. You can transfer to the rotation matrix from Quaternion or Angle axis or Eular Angle using [rotation converter](https://www.andre-gaschler.com/rotationconverter/).
   * line 39 is the feature number. In general, the increase of the feature number indicates better tracking performance, while the decrease means faster tracking speed.
-  * line 74 is the vocabulary file. Must be modified.![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+  * line 74 is the vocabulary file. ![#Must be modified.](https://via.placeholder.com/15/f03c15/000000?text=+) `#Must be modified.`
   * line 75 is the result folder. Must be modified.![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
 
 
