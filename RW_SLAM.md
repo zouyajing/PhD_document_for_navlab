@@ -16,4 +16,34 @@ Go back to the working space and cmake:
 cd rw_slam/
 catkin_make
 ```
+### 2. Run the examples
+
+Two examples are provided: 1. rosbag; 2. Turtlebot2 + Kinect_DK.
+
+Let's start with the first example:
+```
+cd rw_slam/
+catkin_make
+```
+roslaunch rw_slam rviz.launch
+roslaunch rw_slam rw_slam_test.launch
+```
+Please modify:
+* line 3 in rw_slam_test.launch based on your bag file;
+* line 8 based on your config file;
+* line 9-11 based on the image and odom topics.
+
+The second example is about how to employ it on a Turtlebot2 + KinectDK.
+```
+roslaunch rw_slam robot_and_dk.launch      (open the robot and camera driver)
+roslaunch rw_slam scan_DK.launch           (convert depth image to 2D laserscan)
+roslaunch rw_slam rw_slam_front_DK.launch  (run RW_SLAM)
+```
+
+### 3. Run the examples
+
+
+
+
+
 
