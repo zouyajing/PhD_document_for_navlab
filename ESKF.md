@@ -6,7 +6,7 @@ The building and running of IMU_GNSS_ESKF is referred to [imu_gnss_eskf](https:/
 
 The detail of IMU_GNSS_ESKF is shown below:
 
-![ESKF](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ESKF.png)
+![ESKF](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ESKF_.png)
 
 * include.
   * utils.h. It includes the data structure of IMU data, GNSS data and the state, and also the functions to convert between LLA and ENU, and so3 to SO3.
