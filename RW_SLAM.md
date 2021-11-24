@@ -51,8 +51,8 @@ The design of RW_SLAM packages is shown below.
   * turtlebot2_demo. It contains the launch files for running RW_SLAM on a Turtlebot2. + Kinect DK or Kinect v2.
   * rviz.launch. The launch file of Rviz.
   * rw_slam_test.launch. The launch file for running RW_SLAM with a rosbag.
-    * line 3 is the rosbag play node. ![Please modify the path based on your bag file.](https://via.placeholder.com/15/f03c15/000000?text=+)[Please modify the path based on your bag file.]
-    * line 8 is the config file. ![Please modify the path based on your config file.](https://via.placeholder.com/15/f03c15/000000?text=+)[Please modify the path based on your config file.]
+    * line 3 is the rosbag play node. ![#Please modify the path based on your bag file.](https://via.placeholder.com/15/f03c15/000000?text=+)`#Please modify the path based on your bag file.`
+    * line 8 is the config file. ![#Please modify the path based on your config file.](https://via.placeholder.com/15/f03c15/000000?text=+)[Please modify the path based on your config file.]
     * line 9-11 are the image and odom topics.![Please modify the names after rosbag info **.bag.](https://via.placeholder.com/15/f03c15/000000?text=+)[Please modify the path based on your config file.]
 
 
