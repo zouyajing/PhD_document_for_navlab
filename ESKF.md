@@ -2,7 +2,9 @@
 
 It is a loose-coupled system fusing IMU and GNSS data. We can extend it to support cameras easily. 
 The building and running of IMU_GNSS_ESKF is referred to [imu_gnss_eskf](https://github.com/zouyajing/imu_gnss_eskf).
+
 The detail of IMU_GNSS_ESKF is shown below:
+
 ![ESKF](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ESKF.png)
 
 * include.
