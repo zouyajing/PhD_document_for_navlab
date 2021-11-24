@@ -54,6 +54,43 @@ The design of RW_SLAM packages is shown below.
     * line 3 is the rosbag play node. ![0](https://via.placeholder.com/15/f03c15/000000?text=+)`Please modify the path based on your bag file.`
     * line 8 is the config file. ![0](https://via.placeholder.com/15/f03c15/000000?text=+)`Please modify the path based on your config file.`
     * line 9-11 are the image and odom topics.![0](https://via.placeholder.com/15/f03c15/000000?text=+)`Please modify the topic names based on your bag info.`
+  * result. You may save the keyframe poses, camera poses or robot poses here.
+  * rviz. The Rviz config.
+  * src. The source code of RW_SLAM. It includes:
+    * peac. RGB-D plane detection functions.
+    * camera. Camera projection functions.
+    * common. Help functions.
+    * config. Read the config file.
+    * feature_detector. Detector ORB features.
+    * frame. It contains the essential parameters and functions on one frame.
+    * keyframe. It contains the essential parameters and functions on one keyframe.
+    * line_detector. Delect 3D line features.
+    * line_g2o_edge. The edge between one line and one camera pose.
+    * line_matcher. Match line features by LBD.
+    * local mapping. The interface of the local mapping thread.
+    * loop closing. The interface of the loop closing thread.
+    * lsd_detector. Detect LSD feature.
+    * map. The map contains the keyframes, the map points and their relationship, and also relative functions.
+    * map_line. It contains the essential parameters and functions of a 3D line.
+    * map_plane. It contains the essential parameters and functions of a plane.
+    * map_point. It contains the essential parameters and functions of a 3D point.
+    * odo_edge. The edge between two camera poses.
+    * optimizer. The functions of optimization. (Core)
+    * ORBextractor. Copied from ORB_SLAM2.
+    * plane_extractor. The interface of plae detection library.
+    * plane_g2o_edge. The edge between a camera pose and a plane.
+    * plane_g2o_para_edge. The edge between a camera pose, a base plane and its parallel plane.
+    * plane_g2o_ver_edge. The edge between a camera pose, a base plane and its vertical plane.
+    * plane_matcher. The functions to match a plane.
+    * prior_edge. The prior edge for planar motion assumption.
+    * ros_puber. The interface for publishing ROS topics.
+    * run_time. The functions to count the computation time.
+    * rw_slam. The main interface of RW_SLAM, which will start three threads for tracking, local mapping and loop closing.
+    * tracking. The interface for the tracking thread.
+    * vocabulary. Transfer the descriptors to a word vector.
+  * voc. It stores the ORB vocabulary.
+  * CMakeLists. The CMake file for RW_SLAM.
+    
 
 
 
