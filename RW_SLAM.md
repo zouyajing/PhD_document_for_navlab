@@ -42,6 +42,17 @@ The design of RW_SLAM packages is shown below.
 
 ![RW_SLAM](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/RW_SLAM_code.png)
 
+* 3rdparty. It contains some dependeces of RW_SLAM, including:
+  * DBoW2.
+  * g2o.
+  * Sophus.
+* config. It contains the config files for RW_SLAM. `rw_slam_dk.yaml` is used for an example:
+  * line 2- 7 is the parameters of your RGB-D camera, which includes resolution, instrinsic calibration matrix, distortion parameters, depth scale and frequency.
+  * line 28-32 is the 4x4 extrinsic calibration matrix between RGB-D camera and wheel odometer. You can transfer to the rotation matrix from Quaternion or Angle axis or Eular Angle using [rotation converter](https://www.andre-gaschler.com/rotationconverter/).
+  * line 39 is the feature number. In general, the increase of the feature number indicates better tracking performance, while the decrease means faster tracking speed.
+  * line 74 is the vocabulary file. <font color=#800000>Must be modified.</font>
+  * line 75 is the result folder. <font color=#800000>Must be modified.</font>
+
 
 
 
