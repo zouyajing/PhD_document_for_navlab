@@ -52,7 +52,7 @@ The design of RW_SLAM packages is shown below.
   * line 39 is the feature number. In general, the increase of the feature number indicates better tracking performance, while the decrease means faster tracking speed.
   * line 74 is the vocabulary file. <font color=#800000>Must be modified.</font>
   * line 75 is the result folder. <font color=#800000>Must be modified.</font>
-  * <style>
+ <style>
 H1{color:Blue !important;}
 H2{color:DarkOrange !important;}
 p{color:Black !important;}
