@@ -38,6 +38,9 @@ roslaunch rw_slam rw_slam_front_DK.launch  (run RW_SLAM)
 ```
 
 ### 3. Details of RW_SLAM
+The design of RW_SLAM packages is shown below.
+
+[RW_SLAM](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/RW_SLAM_code.png)
 
 
 
