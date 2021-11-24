@@ -22,9 +22,6 @@ Two examples are provided: 1. rosbag; 2. Turtlebot2 + Kinect_DK.
 
 Let's start with the first example:
 ```
-cd rw_slam/
-catkin_make
-```
 roslaunch rw_slam rviz.launch
 roslaunch rw_slam rw_slam_test.launch
 ```
