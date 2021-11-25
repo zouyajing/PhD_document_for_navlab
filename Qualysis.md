@@ -55,3 +55,13 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
   
   In general, two computers are needed. The first (Windows) connects to Qualysis, and the second(ROS + Ubuntu) receive te trajectory. They must use the same WIFI.
   
+  Though the driver will publish the transformation between the world frame and the body frame, you may want to save it to a text file.
+  
+  Please add two lines in  QualisysDriver.cpp:
+   ```
+   std::ofstream f("/home/**/trajectory,.txt");
+   f << setprecision(6) << stamped_transform.stamp_.toSec() << setprecision(7) << " " << pos(0) << " " << pos(1) << " " << pos(2)
+          << " " << att.x() << " " << att.y() << " " << att.z() << " " << att.w() << endl;
+   ```
+  
+  
