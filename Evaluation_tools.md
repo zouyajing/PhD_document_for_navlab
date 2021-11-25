@@ -11,6 +11,7 @@ Then you can use [evo](https://github.com/MichaelGrupp/evo) or [TUM tools](https
 evo_ape tum ground_truth.txt trajectory.txt  -va --plot --plot_mode xy --save_results results/slam
 python evaluate_ate.py --save_associations ground_truth.txt trajectory.txt 
 ```
+![evo](https://www.mdpi.com/1424-8220/20/17/4984/htm)
 If you want to compare the accuracies of mutiple SLAM systems, you can use the association files saved by evaluate_ate.py.
 
 ### 2. Mapping
@@ -41,5 +42,19 @@ The steps of computing mapping accuracy is listed below:
 * Select groundtruth.ply and tunnel.ply, and select file->save. `exa_000001.txt` is the comparasion result you want.
   ![01](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ex_0001.png)
   ![001](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ex_00001.png)
+  
+  The column 7 in exa_000001.txt stores the point-point distance. You may read it by MATLAB:
+  ```
+  ply_slam = txtread('exa_000001.txt');
+  xyz_slam = ply_slam(1:end,1:3);
+  distance_slam = ply_slam(1:end,7);
+  rmse = sqrt((distance_slam).^2);
+  pointcloud_show = pointCloud(xyz_slam,'Intensity',distance_slam);
+  figure;
+  pc_show(pointcloud_show);
+  grid_offl
+  color_bar;
+  caxis([0 0.5]);
+  ```
 
 
