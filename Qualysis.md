@@ -59,8 +59,8 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
   
   Please add two lines in  QualisysDriver.cpp:
    ```
-   std::ofstream f("/home/**/trajectory,.txt");
-   f << setprecision(6) << stamped_transform.stamp_.toSec() << setprecision(7) << " " << pos(0) << " " << pos(1) << " " << pos(2)
+   line 27: std::ofstream f("/home/**/trajectory,.txt");
+   line 225: f << setprecision(6) << stamped_transform.stamp_.toSec() << setprecision(7) << " " << pos(0) << " " << pos(1) << " " << pos(2)
           << " " << att.x() << " " << att.y() << " " << att.z() << " " << att.w() << endl;
    ```
   
