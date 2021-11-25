@@ -23,7 +23,9 @@ python generate_registered_pointcloud.py rgb.txt depth.txt trajectory.txt tunnel
 ```
 where rgb.txt depth.txt and trajectory.txt stores the rgb file paths, the depth file paths and the camera poses, respectively, and tunnel.ply is your reconstruction result.
 
-The steps of computing mapping accuracy is listed below:
+Please modify fx, fy, cx, fy and scale in generate_registered_pointcloud.py.
+
+The steps of computing mapping accuracy is then listed below:
 * Open groundtruth.ply and tunnel.ply using CloudCompare
 
   ![open](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/open.png)
