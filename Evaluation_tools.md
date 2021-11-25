@@ -21,9 +21,7 @@ If you want to compare the accuracies of mutiple SLAM systems, you can use the a
 ```
 python generate_registered_pointcloud.py rgb.txt depth.txt trajectory.txt tunnel.ply --nth --downsample 5
 ```
-where rgb.txt depth.txt and trajectory.txt stores the rgb file paths, the depth file paths and the camera poses, respectively, and tunnel.ply is your reconstruction result.
-
-Please modify fx, fy, cx, fy and scale in generate_registered_pointcloud.py.
+where rgb.txt depth.txt and trajectory.txt stores the rgb file paths, the depth file paths and the camera poses, respectively, and tunnel.ply is your reconstruction result. Please modify fx, fy, cx, fy and scale in generate_registered_pointcloud.py.
 
 The steps of computing mapping accuracy is then listed below:
 * Open groundtruth.ply and tunnel.ply using CloudCompare
