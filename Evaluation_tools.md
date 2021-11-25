@@ -15,15 +15,15 @@ If you want to compare the accuracies of mutiple SLAM systems, you can use the a
 
 ### 2. Mapping
 
-The groundtruth of the 3D model of a corridor is built by a high-quality mobile mapping system. 
+[groundtruth.ply](https://drive.google.com/file/d/15dDPVI8OuOI7BbBYdWX8hMvWcr0gX1Ls/view?usp=sharing) is the groundtruth model of a corridor built by a high-quality mobile mapping system. 
 
-The 3D model of your SLAM system can be built by 
+[tunnel.ply](https://drive.google.com/file/d/14PyJte9iM7PzARfpxeJgWwwecyZUaFOB/view?usp=sharing) is the 3D model built by your SLAM system:
 ```
 python generate_registered_pointcloud.py rgb.txt depth.txt trajectory.txt tunnel.ply --nth --downsample 5
 ```
 where rgb.txt depth.txt and trajectory.txt stores the rgb file paths, the depth file paths and the camera poses, respectively, and tunnel.ply is your reconstruction result.
 
-The steps to use CloudCompare is listed below:
+The steps of computing mapping accuracy is listed below:
 * Open groundtruth.ply and tunnel.ply using Clou
 
 * Select groundtruth.ply and tunnel.ply and selct tools->registration->fine registration(ICP). 
