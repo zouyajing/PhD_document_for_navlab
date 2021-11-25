@@ -24,13 +24,22 @@ python generate_registered_pointcloud.py rgb.txt depth.txt trajectory.txt tunnel
 where rgb.txt depth.txt and trajectory.txt stores the rgb file paths, the depth file paths and the camera poses, respectively, and tunnel.ply is your reconstruction result.
 
 The steps of computing mapping accuracy is listed below:
-* Open groundtruth.ply and tunnel.ply using Clou
+* Open groundtruth.ply and tunnel.ply using CloudCompare
+
+  ![open](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/open.png)
 
 * Select groundtruth.ply and tunnel.ply and selct tools->registration->fine registration(ICP). 
+  
+  ![selct](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ICP.png)
 
-  Use groundtruth.ply as the reference, then tunnel.ply will be aligned to it by ICP.
+  Please use groundtruth.ply as the reference, then tunnel.ply will be aligned to it by ICP.
 
 * Compute the point-to-point distance by selecting tools->distances->Cloud/Cloud Dist.
+
+  ![compare](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/compare.png)
+  
 * Select groundtruth.ply and tunnel.ply, and select file->save. `exa_000001.txt` is the comparasion result you want.
+  ![01](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ex_0001.png)
+  ![001](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ex_00001.png)
 
 
