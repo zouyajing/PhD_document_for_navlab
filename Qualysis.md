@@ -14,7 +14,9 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
   
 * how to calibrate the camera system; 
    
-  If the camera locations are changed, you need to calibrate the system. Please prepare the calibrate tools and then click the calibrate button:
+  If the camera locations are changed, you need to calibrate the system. 
+  
+  Please prepare the calibrate tools and then click the calibrate button:
   
   ![tools](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/calibrate_tools.jpeg)
   
@@ -24,7 +26,32 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
   
   In the middle of the above pic, the red button is to capture, and the button beside it is to calibrate.
   
-  
 * how to define a body frame; 
-* how to show the body trajectory; 
+  
+  Stick the reflcetion balls to your sensor or robot. 
+  
+  Click the capture button, and capture a 1-minite video. 
+  
+  Select the balls you want to define a body in QTM window, and right click to define.
+  
+  ![define](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/definebody.jpeg)
+  
+* how to show the body info; 
+  
+  Select Vie->Data info 1. You will automatically see the ball locations.
+  
+  Right click and select 6-Dof, then you will see the body info.
+  
+  ![Bofy info](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/showdatainfo.png)
 * how to save the body trajectory.
+
+  We can use the [motion_capture_driver]((https://github.com/KumarRobotics/motion_capture_system)) provided by Kumar Robotics.
+  
+  Please modify the line 6 in [qualysis.launch](https://github.com/KumarRobotics/motion_capture_system/blob/master/mocap_qualisys/launch/qualisys.launch).
+ 
+  You can get the server address by ipconfig. `10.11.229.233` is the what you want.
+  
+  ![IP](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ip.png)
+  
+  In general, two computers are needed. The first (Windows) connects to Qualysis, and the second(ROS + Ubuntu) receive te trajectory. They must use the same WIFI.
+  
