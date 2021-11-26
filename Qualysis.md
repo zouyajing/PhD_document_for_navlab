@@ -47,9 +47,9 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
 
   We can use the [motion_capture_driver]((https://github.com/KumarRobotics/motion_capture_system)) provided by Kumar Robotics.
   
-  Please modify the line 6 in [qualysis.launch](https://github.com/KumarRobotics/motion_capture_system/blob/master/mocap_qualisys/launch/qualisys.launch).
+  Please modify the line 6 in [qualysis.launch](https://github.com/KumarRobotics/motion_capture_system/blob/master/mocap_qualisys/launch/qualisys.launch).The server address is the address of the computer where you installed QTM.
  
-  You can get the server address by ipconfig. `10.11.229.233` is the what you want.
+  You can get the address by ipconfig. `10.11.229.233` is the what you want.
   
   ![IP](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ip.png)
   
