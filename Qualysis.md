@@ -57,7 +57,7 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
   
   Though the driver will publish the transformation between the world frame and the body frame, you may save it into a text file.
   
-  For example, add two lines in  QualisysDriver.cpp.
+  For example, add two lines in  [QualisysDriver.cpp](https://github.com/KumarRobotics/motion_capture_system/blob/master/mocap_qualisys/src/QualisysDriver.cpp).
   ```
   line 27: std::ofstream f("/home/**/trajectory.txt");
   line 225: f << setprecision(6) << stamped_transform.stamp_.toSec() << setprecision(7) << " " << pos(0) << " " << pos(1) << " " << pos(2)
