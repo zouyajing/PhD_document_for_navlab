@@ -30,7 +30,7 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
   
   Stick the reflcetion balls to your sensor or robot. 
   
-  Click the capture button, and capture a 1-minite video. 
+  Click the capture button, and capture a 1-minute video. 
   
   Select the balls you want to define a body in QTM window, and right click to define.
   
