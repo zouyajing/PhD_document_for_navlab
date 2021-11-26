@@ -11,6 +11,7 @@ The latest version of RW_SLAM is stored in the robot computer `~/rw_slam/src/rw_
 * g2o for optimization. `cd 3rdparty/g2o/; mkdir build && cd build; cmake ..; make -j; sudo make install`
 * PCL for point cloud processing. `sudo apt install libpcl-dev`
 * octomap for 3D and 2D mapping. `sudo apt-get install ros-melodic-octomap*`
+
 Go back to the working space and cmake:
 ```
 cd ~/rw_slam/
