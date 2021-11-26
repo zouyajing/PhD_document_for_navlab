@@ -20,9 +20,9 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
   
   ![tools](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/tools.png)
   
-  Let the left item be static, and move the right one and make it be observed by all the cameras.
-  
   ![button](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/calibrate_capture.png)
+  
+  Let the left item be static, and move the right one and make it be observed by all the cameras.
   
   In the middle of the above pic, the red button is to capture, and the button beside it is to calibrate.
   
