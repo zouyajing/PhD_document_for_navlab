@@ -42,7 +42,7 @@ The steps of computing mapping accuracy is then listed below:
   ![01](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ex_0001.png)
   ![001](https://github.com/zouyajing/PhD_document_for_navlab/blob/main/imgs/ex_00001.png)
   
-  The column 7 in exa_000001.txt stores the point-point distance. You may read it by MATLAB:
+  The column 7 in `exa_000001.txt` stores the point-point distance. You may read and show it by MATLAB:
   ```
   ply_slam = txtread('exa_000001.txt');
   xyz_slam = ply_slam(1:end,1:3);
