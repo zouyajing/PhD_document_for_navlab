@@ -38,7 +38,7 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
   
 * how to show the body info; 
   
-  Select Vie->Data info 1. You will automatically see the ball locations.
+  Select View->Data info 1. You will automatically see the ball locations.
   
   Right click and select 6-Dof, then you will see the body info.
   
@@ -47,7 +47,7 @@ It is about how to use the Qualysis motion capture system in the navlab. It incl
 
   We can use the [motion_capture_driver]((https://github.com/KumarRobotics/motion_capture_system)) provided by Kumar Robotics.
   
-  Please modify the line 6 in [qualysis.launch](https://github.com/KumarRobotics/motion_capture_system/blob/master/mocap_qualisys/launch/qualisys.launch).The server address is the address of the computer where you installed QTM.
+  Please modify the line 6 in [qualysis.launch](https://github.com/KumarRobotics/motion_capture_system/blob/master/mocap_qualisys/launch/qualisys.launch). The server address is the address of the computer where you installed QTM.
  
   You can get the address by ipconfig. `10.11.229.233` is the what you want.
   
