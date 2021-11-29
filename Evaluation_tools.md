@@ -11,7 +11,7 @@ Then you can use [evo](https://github.com/MichaelGrupp/evo) or [TUM tools](https
 evo_ape tum ground_truth.txt trajectory.txt  -va --plot --plot_mode xy --save_results results/slam
 python evaluate_ate.py --save_associations ground_truth.txt trajectory.txt 
 ```
-If you want to compare the accuracies of mutiple SLAM systems, you can use the association files saved by evaluate_ate.py.
+If you want to compare the accuracies of mutiple SLAM systems, you can use the association files saved by `evaluate_ate.py`.
 
 ### 2. Mapping
 
