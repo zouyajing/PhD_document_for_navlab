@@ -19,7 +19,7 @@ If you want to compare the accuracies of mutiple SLAM systems, you can use the a
 
 [tunnel.ply](https://drive.google.com/file/d/14PyJte9iM7PzARfpxeJgWwwecyZUaFOB/view?usp=sharing) is the 3D model built by your SLAM system:
 ```
-python generate_registered_pointcloud.py rgb.txt depth.txt trajectory.txt tunnel.ply --nth --downsample 5
+python generate_registered_pointcloud.py rgb.txt depth.txt trajectory.txt tunnel.ply --nth 5 --downsample 5
 ```
 where `rgb.txt` `depth.txt` and `trajectory.txt` stores the rgb file paths, the depth file paths and the camera poses, respectively, and tunnel.ply is your reconstruction result. You may download the scripts [here](https://github.com/zouyajing/PhD_document_for_navlab/tree/main/scripts).Please modify `fx, fy, cx, fy and scale` in `generate_registered_pointcloud.py`.
 
